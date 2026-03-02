@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --font-game: "Press Start 2P", cursive;
+  
+  --color-rpg-purple: #a855f7;
+  --color-rpg-blue: #3b82f6;
+  --color-rpg-green: #22c55e;
+  --color-rpg-gold: #f59e0b;
+  --color-rpg-red: #ef4444;
+  --color-rpg-bg: #f8fafc;
+  --color-rpg-card: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-rpg-bg text-slate-800 antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 40%);
+  }
+}
+
+.game-shadow {
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.game-shadow-hover:hover {
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.15);
+  transform: translate(-2px, -2px);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.pixel-corners {
+  clip-path: polygon(
+    0 4px, 4px 4px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
+    4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+  );
+}
+
+.progress-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
+}
+
+.font-game {
+  font-family: var(--font-game);
+}
