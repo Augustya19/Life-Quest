@@ -21,7 +21,7 @@ The system applies game design principles and behavioral psychology to improve m
 
 ---
 
-## 🎮 Core Features
+## Core Features
 
 ### 1. Quest System
 - Create structured **Main Quests**
@@ -47,7 +47,7 @@ Sub-Quests:
 
 ---
 
-### 4. XP & Leveling Engine
+### 3. XP & Leveling Engine
 - Structured XP accumulation
 - Level threshold scaling formula
 - Achievement badges
@@ -57,7 +57,7 @@ Sub-Quests:
 
 ---
 
-## 🏗️ Tech Stack (Planned Architecture)
+## Tech Stack (Planned Architecture)
 
 ### Frontend
 - React / Next.js
@@ -76,7 +76,7 @@ Sub-Quests:
 
 ---
 
-## 📌 Use Cases
+## Use Cases
 
 - Students preparing for competitive exams
 - Professionals upskilling
@@ -86,13 +86,13 @@ Sub-Quests:
 
 ---
 
-## 📈 Project Status
+## Project Status
 
 Currently in development.  
 Core gamification logic and architecture are being actively designed and refined.
 
 ---
 
-## 👤 Author
+## Author
 
 Built as a product-thinking exploration into gamified behavior systems and engagement design.
